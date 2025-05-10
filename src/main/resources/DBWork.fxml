@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DBWorkController">
+   <children>
+      <AnchorPane layoutY="76.0" prefHeight="330.0" prefWidth="600.0" style="-fx-background-color: #E6E2DC;">
+         <children>
+            <Button fx:id="accountSignUpButton" alignment="CENTER" layoutX="41.0" layoutY="41.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Личный кабинет">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackUpButton" layoutX="177.0" layoutY="254.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="employeeScheduleSignUpButton" alignment="CENTER" layoutX="331.0" layoutY="172.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="График сотрудников">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="DBSignUpButton" alignment="CENTER" layoutX="331.0" layoutY="41.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Работа с БД">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="statisticsSignUpButton" alignment="CENTER" layoutX="331.0" layoutY="106.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Статистика салона">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="infoClientSignUpButton" alignment="CENTER" layoutX="41.0" layoutY="106.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Информация о клиентах">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="profitSignUpButton" alignment="CENTER" layoutX="41.0" layoutY="172.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Просмотр отзывов">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="215.0" layoutY="45.0" text="Работа с БД" textAlignment="CENTER" textFill="#fcc6a4">
+         <font>
+            <Font name="Candara Light" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

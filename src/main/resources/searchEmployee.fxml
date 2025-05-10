@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.searchEmployeeController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;">
+         <children>
+            <AnchorPane layoutY="46.0" prefHeight="354.0" prefWidth="600.0" style="-fx-background-color: C5CECE;">
+               <children>
+                  <Button fx:id="backUpButton" layoutX="33.0" layoutY="292.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Math" size="20.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="employeeTable" layoutX="16.0" layoutY="98.0" prefHeight="171.0" prefWidth="568.0">
+                     <columns>
+                        <TableColumn fx:id="ID_field" prefWidth="22.000001907348633" text="ID" />
+                        <TableColumn fx:id="firstNameColumn" prefWidth="84.79998779296875" text="Имя" />
+                        <TableColumn fx:id="lastNameColumn" prefWidth="101.5999755859375" text="Фамилия" />
+                        <TableColumn fx:id="fatherNameColumn" prefWidth="96.7999267578125" text="Отчество" />
+                        <TableColumn fx:id="phoneColumn" prefWidth="124.7999267578125" text="Телефон" />
+                        <TableColumn fx:id="positionColumn" minWidth="0.0" prefWidth="139.199951171875" text="Должность" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="search_field" layoutX="304.0" layoutY="50.0" prefHeight="26.0" prefWidth="268.0" promptText="Введите дял поиска сотрудника" />
+                  <ChoiceBox fx:id="position_choiceBox" layoutX="50.0" layoutY="51.0" prefWidth="150.0" />
+                  <Text layoutX="50.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите должность" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="194.0" layoutY="14.0" text="Поиск сотрудников" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

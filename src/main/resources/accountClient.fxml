@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountCLientController">
+   <children>
+      <AnchorPane layoutY="69.0" prefHeight="330.0" prefWidth="600.0" style="-fx-background-color: #A5B2BA;">
+         <children>
+            <Button fx:id="BackUpButton" layoutX="460.0" layoutY="259.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="93.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="surname_field" layoutX="176.0" layoutY="61.0" promptText="Фамилия" />
+            <Text layoutX="44.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите данные в поля и нажмиите кнопку &quot;Изменить&quot;" />
+            <TextField fx:id="name_field" layoutX="176.0" layoutY="103.0" promptText="Имя" />
+            <TextField fx:id="email_field" layoutX="176.0" layoutY="150.0" promptText="Электронная почта" />
+            <TextField fx:id="login_field" layoutX="176.0" layoutY="198.0" promptText="Логин" />
+            <PasswordField fx:id="password_field" layoutX="176.0" layoutY="244.0" promptText="Пароль" />
+            <Button fx:id="surname_change" layoutX="350.0" layoutY="61.0" mnemonicParsing="false" text="Изменить " />
+            <Button fx:id="name_change" layoutX="350.0" layoutY="101.0" mnemonicParsing="false" text="Изменить " />
+            <Button fx:id="login_change" layoutX="350.0" layoutY="198.0" mnemonicParsing="false" text="Изменить " />
+            <Button fx:id="password_change" layoutX="350.0" layoutY="244.0" mnemonicParsing="false" text="Изменить " />
+            <Button fx:id="email_change" layoutX="350.0" layoutY="150.0" mnemonicParsing="false" text="Изменить " />
+         </children>
+      </AnchorPane>
+      <Label layoutX="221.0" layoutY="38.0" text="Личный кабинет" textAlignment="CENTER" textFill="#fcc6a4">
+         <font>
+            <Font name="Candara Light" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

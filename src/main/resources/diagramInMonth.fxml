@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.diagramInMonthController">
+   <children>
+      <AnchorPane layoutY="74.0" prefHeight="330.0" prefWidth="600.0" style="-fx-background-color: #A5B2BA;">
+         <children>
+            <Button fx:id="BackUpButton" layoutX="33.0" layoutY="252.0" mnemonicParsing="false" onAction="#BackMenuDB" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Button>
+            <BarChart fx:id="diagramAria" layoutX="131.0" prefHeight="330.0" prefWidth="470.0" title="Загруженность сотрудников за месяц">
+                <xAxis>
+                    <CategoryAxis label="Сотрудники" fx:id="xAxis" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="yAxis" autoRanging="false" label="часы" lowerBound="0" tickUnit="2" upperBound="10" />
+                </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <Label layoutX="111.0" layoutY="33.0" text="Диаграмма занятости сотрудников" textAlignment="CENTER" textFill="#fcc6a4">
+         <font>
+            <Font name="Candara Light" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

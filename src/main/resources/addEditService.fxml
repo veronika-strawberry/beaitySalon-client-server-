@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddEditServiceController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #6A5455;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="58.0" prefHeight="346.0" prefWidth="601.0" style="-fx-background-color: C5CECE;">
+               <children>
+                  <Button fx:id="addButton" layoutX="392.0" layoutY="185.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #327472;" text="Добавить" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Math" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton" layoutX="374.0" layoutY="269.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #327472;" text="Редактировать" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Math" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BackUpButton" layoutX="26.0" layoutY="284.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Math" size="20.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="name_field" layoutX="33.0" layoutY="45.0" prefHeight="26.0" prefWidth="272.0" promptText="Название">
+                     <font>
+                        <Font name="Cambria Math" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="type_field" layoutX="33.0" layoutY="79.0" prefHeight="26.0" prefWidth="272.0" promptText="Тип">
+                     <font>
+                        <Font name="Cambria Math" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="price_field" layoutX="26.0" layoutY="226.0" prefHeight="26.0" prefWidth="278.0" promptText="Цена">
+                     <font>
+                        <Font name="Cambria Math" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="322.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="213.59999999999997" />
+                  <Text layoutX="135.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заполните поля соответствующими данными">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ID_edit" layoutX="363.0" layoutY="226.0" prefHeight="26.0" prefWidth="149.0" promptText="ID для редактирования" />
+                  <ChoiceBox fx:id="employee_choicebox" layoutX="100.0" layoutY="118.0" prefHeight="26.0" prefWidth="202.0" />
+                  <Text layoutX="33.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сотрудник" wrappingWidth="67.46990776062012" />
+                  <Text layoutX="34.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата и время проведения">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="date_picker" layoutX="30.0" layoutY="186.0" />
+                  <ComboBox fx:id="time_comboBox" layoutX="217.0" layoutY="186.0" prefHeight="26.0" prefWidth="85.0" />
+                  <TextField fx:id="lengthOfTime_field1" layoutX="328.0" layoutY="79.0" prefHeight="26.0" prefWidth="202.0" promptText="Продолжительность процедуры">
+                     <font>
+                        <Font name="Cambria Math" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="537.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="мин.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="101.0" layoutY="27.0" text="Добавление/редактирование услуги" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

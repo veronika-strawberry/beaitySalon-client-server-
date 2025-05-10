@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455#DEB1AB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuClientController">
+   <children>
+      <AnchorPane layoutY="81.0" prefHeight="330.0" prefWidth="603.0" style="-fx-background-color: #E6E2DC;">
+         <children>
+            <Button fx:id="accountSignUpButton" alignment="CENTER" layoutX="190.0" layoutY="96.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Личный кабинет">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackUpButton" layoutX="477.0" layoutY="249.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #778174;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewServiceSignUpButton" alignment="CENTER" layoutX="190.0" layoutY="42.0" mnemonicParsing="false" onAction="#showService" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Просмотр услуг">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="reviewSignUpButton" alignment="CENTER" layoutX="190.0" layoutY="149.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Оставить отзыв">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchEmployeeSignUpButton" alignment="CENTER" layoutX="190.0" layoutY="205.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="224.0" style="-fx-border-color: #79A5A6;" text="Поиск сотрудников">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="264.0" layoutY="50.0" text="Клиент" textAlignment="CENTER" textFill="#fcc6a4">
+         <font>
+            <Font name="Candara Light" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

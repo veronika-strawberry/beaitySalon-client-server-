@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderListClientController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;">
+               <children>
+                  <AnchorPane layoutY="46.0" prefHeight="358.0" prefWidth="600.0" style="-fx-background-color: #A5B2BA;">
+                     <children>
+                        <Label layoutX="93.0" layoutY="14.0" text="Параметр фильтрации">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="searchField" layoutX="93.0" layoutY="47.0" prefHeight="26.0" prefWidth="322.0" promptText="Введите услугу дял поиска" />
+                        <Button fx:id="BackUpButton" layoutX="441.0" layoutY="277.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="38.0" prefWidth="123.0" style="-fx-background-color: #79A5A6;" text="Назад">
+                           <font>
+                              <Font name="Candara" size="20.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="listSort" layoutX="254.0" layoutY="10.0" prefWidth="150.0" />
+                        <TableView fx:id="orderTable" layoutX="16.0" layoutY="87.0" prefHeight="170.0" prefWidth="567.0">
+                           <columns>
+                              <TableColumn fx:id="IDColumn" prefWidth="34.199995040893555" text="ID" />
+                              <TableColumn fx:id="NameColumn" prefWidth="108.60001373291016" text="Название" />
+                              <TableColumn fx:id="TypeColumn" prefWidth="79.39999389648438" text="Тип" />
+                              <TableColumn fx:id="MasterColumn" prefWidth="112.39999389648438" text="Мастер" />
+                              <TableColumn fx:id="TimeColumn" minWidth="0.0" prefWidth="119.0" text="Время" />
+                              <TableColumn fx:id="ConfirmColumn" prefWidth="109.79995727539062" text="Статус" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="210.0" layoutY="14.0" text="Корзина заказов" textAlignment="CENTER" textFill="#fcc6a4">
+                     <font>
+                        <Font name="Candara Light" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

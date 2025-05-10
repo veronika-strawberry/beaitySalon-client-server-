@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A5455;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddEditEmployeeController">
+    <children>
+        <AnchorPane layoutY="58.0" prefHeight="346.0" prefWidth="600.0" style="-fx-background-color: C5CECE;">
+            <children>
+                <Button fx:id="addButton" layoutX="392.0" layoutY="171.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #327472;" text="Добавить" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="15.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="editButton" layoutX="374.0" layoutY="269.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #327472;" text="Редактировать" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria Math" size="15.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="BackUpButton" layoutX="26.0" layoutY="284.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #327472;" text="Назад" textFill="WHITE" onAction="#goBack">
+                    <font>
+                        <Font name="Cambria Math" size="20.0" />
+                    </font>
+                </Button>
+
+                <PasswordField fx:id="password_field" layoutX="322.0" layoutY="118.0" prefHeight="26.0" prefWidth="214.0" promptText="Пароль">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </PasswordField>
+
+                <TextField fx:id="login_field" layoutX="322.0" layoutY="79.0" prefHeight="26.0" prefWidth="213.0" promptText="Логин">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="name_field" layoutX="33.0" layoutY="45.0" prefHeight="26.0" prefWidth="266.0" promptText="Имя">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="lastName_field" layoutX="33.0" layoutY="79.0" prefHeight="26.0" prefWidth="266.0" promptText="Фамилия">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="fathername_field" layoutX="33.0" layoutY="118.0" prefHeight="26.0" prefWidth="266.0" promptText="Отчество">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="phonenumber_field" layoutX="33.0" layoutY="160.0" prefHeight="26.0" prefWidth="266.0" promptText="Номер телефона">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="position_field" layoutX="33.0" layoutY="198.0" prefHeight="26.0" prefWidth="266.0" promptText="Должность">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="salary_field" layoutX="33.0" layoutY="239.0" prefHeight="26.0" prefWidth="266.0" promptText="Заработная плата">
+                    <font>
+                        <Font name="Cambria Math" size="12.0" />
+                    </font>
+                </TextField>
+
+                <Text layoutX="322.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="213.59999999999997" />
+            <Text layoutX="135.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заполните поля соответствующими данными">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ID_edit" layoutX="363.0" layoutY="226.0" prefHeight="26.0" prefWidth="149.0" promptText="ID для редактирования" />
+            </children>
+        </AnchorPane>
+
+        <Label layoutX="73.0" layoutY="27.0" text="Добавление/редактирование сотрудника" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Candara" size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
